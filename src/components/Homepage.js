@@ -27,11 +27,18 @@ jumbotron: {
     backgroundColor: "#e9ecef",
 }
 };
+
+// Props show/hide function?
+// Import all pages
+// Write a function to show/hide classes using props
+// apply to a  click event on each anchor link 
+
+
 // Homepage function
 
 function Homepage() {
   return (
-    <div className="jumbotron" style={styles.jumbotron} >
+    <div className="jumbotron show" style={styles.jumbotron} >
       <div className="container">
         <div className="row" >
           <div className="col-sm" style={styles.bannerText}>
