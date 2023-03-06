@@ -1,0 +1,55 @@
+[
+{
+    "id": 1,
+    "image": "images/plan-my-trip.png",
+    "title": "Plan My Trip",
+    "description": "Plan My Trip makes it easy for users to search for attractions in their chosen destination city using a readily available list. ",
+    "projectUrl": "https://mariuml.github.io/plan-my-trip/"
+
+},
+{
+    "id": 2,
+    "image": "images/coding-quiz.png",
+    "title": "Coding Quiz",
+    "description": "An interactive coding quiz to test your knowledge of HTML, CSS and Javascript",
+    "projectUrl": "https://mariuml.github.io/coding-quiz/"
+
+},
+
+{
+    "id": 3,
+    "image": "images/work-day-scheduler.png",
+    "title": "Work Day Scheduler",
+    "description": "This app is a a simple calendar application that allows a user to save events for each hour of the day by entering in tasks. This app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.",
+    "projectUrl": "https://mariuml.github.io/daily-planner-app/"
+
+},
+{
+    "id": 4,
+    "image": "../images/password-generator.png",
+    "title": "Password Generator",
+    "description": "For this project I used Javascript functions to create a random password generator. I used my knowledge of global and local scope, if statements and variables to create this fully interactive program.",
+    "projectUrl": "https://mariuml.github.io/password-generator/"
+
+},
+
+{
+    "id": 5,
+    "image": "../images/weather-dashboard.png",
+    "title": "Weather Dashboard",
+    "description": "A website application displaying a 5-day weather forecast for a location chosen by the user.",
+    "projectUrl": "https://mariuml.github.io/weather-app/"
+
+},
+
+{
+    "id": 6,
+    "image": "../images/fly-ux.png",
+    "title": "FlyUX",
+    "description": "Designing a flight booking user experience",
+    "projectUrl": "https://uxfol.io/p/1e914c35/0335086a"
+
+}
+
+
+]

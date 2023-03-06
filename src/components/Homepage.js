@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../images/hero-img.png";
+
 
 // Styling for homepage
 
@@ -48,7 +48,7 @@ function Homepage() {
              Welcome to my portfolio.
           </div>
           <div className="col-sm">
-            <img src={HeroImg} style={styles.heroImg} />
+            <img src="images/hero-img.png" style={styles.heroImg} />
           </div>
         </div>
       </div>
