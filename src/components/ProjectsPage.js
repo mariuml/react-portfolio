@@ -1,7 +1,8 @@
 import React from "react";
 
+  // Displaying projects to project page 
 function ProjectsPage(props) {
-  return (
+    return (
     <div>
       <div className="container project">
         <div>

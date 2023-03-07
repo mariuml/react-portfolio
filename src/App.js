@@ -1,27 +1,27 @@
 import React from "react";
 import Header from "./components/Header";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+// Pages
 import Homepage from "./components/Homepage";
-import ProjectsPage from "./components/ProjectsPage";
-import projects from "./projects.json";
+import ProjectsDisplay from "./components/ProjectsDisplay";
+import ContactPage from "./components/ContactPage";
 
 function App() {
-  
-const projectsArray = [];
-for (let i=0; i < projects.length; i++) {
-  projectsArray.push(<ProjectsPage
-    image={projects[i].image}
-    title={projects[i].title}
-    description={projects[i].description}
-    projectUrl={projects[i].projectUrl}
-  />)
-}
-  
+  // Returning the various pages
   return (
-    <div>
-      <Header />
-      <Homepage />
-      {projectsArray} 
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+
+        {/* Routing to different pages in the single page application */}
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="projects" element={<ProjectsDisplay />} />
+          <Route path="contact" element={<ContactPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
