@@ -1,5 +1,3 @@
-// BUG: bootstrap mobile toggler not working
-
 import React from 'react'
 
 function Header() {

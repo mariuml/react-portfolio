@@ -1,30 +1,97 @@
-import React from 'react'
+import React, { useState } from "react";
 
 function ContactPage() {
-    return (
-        <div>
-     {/* <!-- Github --> */}
+  // Setting the components initial state
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
 
-<a href="https://github.com/mariuml">
-<button type="button"> Github </button>
-</a>
+  const handleInputChange = event => {
+    // Getting the value and name of the input which triggered the change
+    const { name, value } = event.target;
 
-{/* <!-- Linkedin --> */}
-<a href="https://linkedin.com/in/mariumladha">
-  <button type="button"> Linkedin </button>
-  </a>
+      // Updating the input's state
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    }
 
-  {/* <!-- Resume --> */}
-<a href="https://drive.google.com/file/d/1dxx6LRoorL2XjsL8VIvbwf-zwunWv30Q/view?usp=sharing">
-  <button type="button"> Resume </button>
-  </a>
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
 
-    {/* <!-- Email --> */}
-<a href="mailto:mariumladha97@gmail.com">
-  <button type="button"> Email </button>
-  </a>
-        </div>
-    )
+    // Updating the input's state
+    setFormData({
+      ...formData,
+    });
+  };
+
+  return (
+    <div>
+      {/* Contact form */}
+
+      <div>
+        <p>For any other enquiries, please use the contact form below.</p>
+        <form className="form">
+          <input
+            value={formData.firstName}
+            name="firstName"
+            type="text"
+            onChange={handleInputChange}
+            placeholder="First Name"
+          />
+          <input
+            value={formData.lastName}
+            name="lastName"
+            type="text"
+            onChange={handleInputChange}
+            placeholder="Last Name"
+          />
+          <input
+            value={formData.email}
+            name="email"
+            type="text"
+            onChange={handleInputChange}
+            placeholder="Contact Email"
+          />
+          <input
+            value={formData.message}
+            name="message"
+            type="text"
+            onChange={handleInputChange}
+            placeholder="Enter Message"
+          />
+          <button onClick={handleFormSubmit}>Submit</button>
+        </form>
+      </div>
+
+      <footer>
+        {/* <!-- Github --> */}
+
+        <a href="https://github.com/mariuml">
+          <button type="button"> Github </button>
+        </a>
+
+        {/* <!-- Linkedin --> */}
+        <a href="https://linkedin.com/in/mariumladha">
+          <button type="button"> Linkedin </button>
+        </a>
+
+        {/* <!-- Resume --> */}
+        <a href="https://drive.google.com/file/d/1dxx6LRoorL2XjsL8VIvbwf-zwunWv30Q/view?usp=sharing">
+          <button type="button"> Resume </button>
+        </a>
+
+        {/* <!-- Email --> */}
+        <a href="mailto:mariumladha97@gmail.com">
+          <button type="button"> Email </button>
+        </a>
+      </footer>
+    </div>
+  );
 }
 
-export default ContactPage
+export default ContactPage;
