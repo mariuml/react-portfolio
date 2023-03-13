@@ -1,10 +1,5 @@
 import React from 'react'
 
-const styles = {
-  navbar: {
-    fontFamily: "'Open Sans', sans-serif",
-  },
-}
 
 
 function Header() {

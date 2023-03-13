@@ -47,7 +47,7 @@ function Homepage() {
              Welcome to my portfolio.
           </div>
           <div className="col-sm">
-            <img src="images/hero-img.png" style={styles.heroImg} />
+            <img src="images/hero-img.png" alt="Side profile of portfolio owner" style={styles.heroImg} />
           </div>
         </div>
       </div>

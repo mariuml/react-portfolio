@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./components/Header";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 // Pages
 import Homepage from "./components/Homepage";
 import ProjectsDisplay from "./components/ProjectsDisplay";
 import ContactPage from "./components/ContactPage";
+import Header from "./components/Header";
 
 function App() {
   // Returning the various pages
