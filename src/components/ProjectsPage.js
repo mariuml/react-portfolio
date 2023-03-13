@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/ProjectDisplay.css";
 
   // Displaying projects to project page 
 function ProjectsPage(props) {

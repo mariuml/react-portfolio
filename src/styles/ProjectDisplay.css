@@ -1,0 +1,21 @@
+:root {
+    --theme-color-1: #7c7a7a;
+    --theme-color-2: #ffc0cb;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif !important;
+    line-height: 1.5;
+    background-color: #f8edeb !important;
+  }
+
+
+  /* Project styling */
+
+  .project {
+    padding: 20px;
+
+  }
