@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/ContactPage.css";
 
 function ContactPage() {
   // Setting the components initial state
@@ -9,16 +10,16 @@ function ContactPage() {
     message: "",
   });
 
-  const handleInputChange = event => {
+  const handleInputChange = (event) => {
     // Getting the value and name of the input which triggered the change
     const { name, value } = event.target;
 
-      // Updating the input's state
-      setFormData({
-        ...formData,
-        [name]: value
-      });
-    }
+    // Updating the input's state
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -34,41 +35,64 @@ function ContactPage() {
       {/* Contact form */}
 
       <div>
-        <p>For any other enquiries, please use the contact form below.</p>
-        <form className="form">
-          <input
-            value={formData.firstName}
-            name="firstName"
-            type="text"
-            onChange={handleInputChange}
-            placeholder="First Name"
-          />
-          <input
-            value={formData.lastName}
-            name="lastName"
-            type="text"
-            onChange={handleInputChange}
-            placeholder="Last Name"
-          />
-          <input
-            value={formData.email}
-            name="email"
-            type="text"
-            onChange={handleInputChange}
-            placeholder="Contact Email"
-          />
-          <input
-            value={formData.message}
-            name="message"
-            type="text"
-            onChange={handleInputChange}
-            placeholder="Enter Message"
-          />
-          <button onClick={handleFormSubmit}>Submit</button>
+      <p id="intro">For any other enquiries, please use the contact form below.</p>
+        <form>
+                 
+          <form className="form-group">
+            <label for="firstName"> First Name </label>
+            <input
+              value={formData.firstName}
+              name="firstName"
+              type="text"
+              onChange={handleInputChange}
+              placeholder="First Name"
+              className="form-control"
+            />
+          </form>
+
+          <form className="form-group">
+            <label for="lastName"> Last Name </label>
+            <input
+              value={formData.lastName}
+              name="lastName"
+              type="text"
+              onChange={handleInputChange}
+              placeholder="Last Name"
+              className="form-control"
+            />
+          </form>
+
+          <form className="form-group">
+            <label for="email"> Email </label>
+            <input
+              value={formData.email}
+              name="email"
+              type="text"
+              onChange={handleInputChange}
+              placeholder="Contact Email"
+              className="form-control"
+            />
+          </form>
+
+          <form className="form-group">
+            <label for="message"> Enter Message </label>
+            <textarea
+              value={formData.message}
+              name="message"
+              type="text"
+              onChange={handleInputChange}
+              placeholder="Enter Message"
+              className="form-control"
+              rows="3"
+            ></textarea>
+          </form>
+          <button className="button" onClick={handleFormSubmit}>
+            Submit
+          </button>
         </form>
       </div>
 
-      <footer>
+      <footer className="footer">
         {/* <!-- Github --> */}
 
         <a href="https://github.com/mariuml">

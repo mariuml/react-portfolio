@@ -1,9 +1,10 @@
 import React from "react";
 
-
 // Styling for homepage
 
 const styles = {
+
+
   heroImg: {
     height: "300px",
     width: "400px",
@@ -26,14 +27,17 @@ jumbotron: {
     height: "400px",
     backgroundColor: "#e9ecef",
 }
-};
+}
+
 
 
 // Homepage function
 
 function Homepage() {
   return (
-    <div className="jumbotron show" style={styles.jumbotron} >
+
+    
+    <div className="jumbotron" style={styles.jumbotron} >
       <div className="container">
         <div className="row" >
           <div className="col-sm" style={styles.bannerText}>
@@ -49,6 +53,7 @@ function Homepage() {
       </div>
 
     </div>
+ 
     
   );
 }

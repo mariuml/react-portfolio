@@ -1,13 +1,21 @@
 import React from 'react'
 
+const styles = {
+  navbar: {
+    fontFamily: "'Open Sans', sans-serif",
+  },
+}
+
+
 function Header() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="/">Marium Ladha // Web Developer </a>
+
+      <nav className="navbar navbar-expand-lg navbar-light bg-light" style={styles.navbar}>
+      <a className="navbar-brand" href="/" >Marium Ladha // Web Developer </a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
+      <div className="collapse navbar-collapse" id="navbarNav" >
         <ul className="navbar-nav">
     
           <li className="nav-item">
@@ -22,6 +30,7 @@ function Header() {
         </ul>
       </div>
     </nav>
+
     )
 }
 
